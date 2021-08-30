@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 // создайте функцию palindrome, которая будет возвращать bool
 str1 = 'клык';
 let result = str1.split('').reverse().join('');
@@ -10,7 +9,6 @@ if (str1 === result) {
 // и/или
 function Palindrome(str) {
   if (str === str.split('').reverse().join(''))
-  // eslint-disable-next-line indent
         {return true;}
   else
         return false;
@@ -45,8 +43,6 @@ console.log(max(8, 5));
 // вар 2
 let max1 = (a, b) => a > b ? a : b;
 console.log(max1 (8, 5));
-
-
 
 
 // создайте массив с десятью случайными элементами от 0 до 100
