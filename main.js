@@ -1,5 +1,6 @@
-// создайте функцию palindrome, которая будет возвращать bool значение в зависимости от того, является ли переданное функции слово палиндромом или нет.
-str1 = "клык";
+/* eslint-disable linebreak-style */
+// создайте функцию palindrome, которая будет возвращать bool
+str1 = 'клык';
 let result = str1.split('').reverse().join('');
 if (str1 === result) {
     console.log(true)
@@ -8,13 +9,13 @@ if (str1 === result) {
 }
 // и/или
 function Palindrome(str) {
-    if (str === str.split('').reverse().join(''))
-        return true;
-    else
+  if (str === str.split('').reverse().join(''))
+  // eslint-disable-next-line indent
+        {return true;}
+  else
         return false;
 }
 console.log(Palindrome('qwewq'))
-
 
 
 // напишите функцию min(a,b), которая возвращает меньшее из чисел;
