@@ -1,4 +1,7 @@
 {
+    "linebreak-style": 
+    ["error", "unix", "windows"],
+    
     "env": {
         "browser": true,
         "es2021": true
@@ -11,5 +14,7 @@
         "sourceType": "module"
     },
     "rules": {
+        
     }
+    
 }
