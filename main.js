@@ -1,5 +1,5 @@
 // создайте функцию palindrome, которая будет возвращать bool
-str1 = 'клык';
+let str1 = 'клык';
 let result = str1.split('').reverse().join('');
 if (str1 === result) {
     console.log(true)
