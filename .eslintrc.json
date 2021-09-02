@@ -1,12 +1,10 @@
 {
-    "linebreak-style": 
-    ["error", "unix", "windows"],
-    
     "env": {
         "browser": true,
         "es2021": true
     },
     "extends": [
+        
         "airbnb-base"
     ],
     "parserOptions": {
@@ -14,7 +12,11 @@
         "sourceType": "module"
     },
     "rules": {
-        
+        "no-console": 0,
+        "no-use-before-define": 0,
+        "func-names": "off",
+        "semi": ["never"],
+        "linebreak-style": ["error", "windows"]
     }
     
 }
