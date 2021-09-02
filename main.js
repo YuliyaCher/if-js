@@ -28,3 +28,4 @@ p.forEach((item) => {
   const color = changeColor();
   item.addEventListener('click', color);
 });
+
