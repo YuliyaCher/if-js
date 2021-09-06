@@ -4,6 +4,7 @@
         "es2021": true
     },
     "extends": [
+        "prettier",
         "airbnb-base"
     ],
     "parserOptions": {
@@ -11,10 +12,11 @@
         "sourceType": "module"
     },
     "rules": {
-        "linebreak-style": 0,
         "no-console": 0,
         "no-use-before-define": 0,
         "func-names": "off",
-        "semi": ["never"]
+        "semi": 2,
+        "linebreak-style": ["error", "windows"]
     }
+    
 }
