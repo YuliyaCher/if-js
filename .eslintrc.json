@@ -17,7 +17,12 @@
         "func-names": "off",
         "semi": 2,
         "linebreak-style": ["error", "windows"],
-        "no-plusplus": "off"
-    }
-    
+        "no-plusplus": "off",
+        "no-shadow": "off",
+        "prefer-const": "off",
+        "prefer-template":"off",
+        "nonblock-statement-body-position":"off",
+        "curly":"off",
+        "consistent-return":"off"
+        }
 }
