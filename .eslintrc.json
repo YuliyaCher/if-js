@@ -23,6 +23,12 @@
         "prefer-template":"off",
         "nonblock-statement-body-position":"off",
         "curly":"off",
-        "consistent-return":"off"
+        "consistent-return":"off",
+        "quotes":"off",
+        "space-infix-ops":"off",
+        "max-len": "off",
+        "no-confusing-arrow":"off",
+        "no-else-return":"off",
+        "no-param-reassign": ["error", { "props": false }]
         }
 }
