@@ -16,7 +16,8 @@
         "no-use-before-define": 0,
         "func-names": "off",
         "semi": 2,
-        "linebreak-style": ["error", "windows"]
+        "linebreak-style": ["error", "windows"],
+        "no-plusplus": "off"
     }
     
 }

@@ -1,0 +1,9 @@
+{
+  "jsxBracketSameLine": true,
+  "semi": true,
+  "printWidth": 90,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "parser": "babel",
+  "bracketSpacing": true
+}
