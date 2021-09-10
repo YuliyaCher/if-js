@@ -29,6 +29,7 @@
         "max-len": "off",
         "no-confusing-arrow":"off",
         "no-else-return":"off",
-        "no-param-reassign": ["error", { "props": false }]
+        "no-param-reassign": ["error", { "props": false }],
+        "spaced-comment": ["error", "always", { "markers": ["/"] }]
         }
 }
