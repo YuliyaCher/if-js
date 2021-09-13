@@ -188,15 +188,13 @@ console.log(Searchstr('UK'));
 //   Ukraine: ['Kyiv']
 // }
 
-function searchCountry(str) {
-  let countryAndCities = [];
-  hotels.forEach((item) => {
-    let str3 = `${item.country}: ['${item.city}']`;
-    if (str3.includes(str)) {
-      countryAndCities.push(str3);
-    }
-  });
-  return countryAndCities;
-}
-console.log(searchCountry('Germany'));
-// я много раз тыкалась, но так и не поняла,  как вывести всё сразу в консоль. и я сдалась.
+let allCountries = {};
+hotels.forEach(item => {
+  if (!allCountries[item.country]) {
+    allCountries[item.country] = [];
+  }
+  if (!allCountries[item.country].includes(item.city)) {
+    allCountries[item.country].push(item.city);
+  }
+});
+console.log(allCountries);

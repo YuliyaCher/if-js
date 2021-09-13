@@ -30,6 +30,8 @@
         "no-confusing-arrow":"off",
         "no-else-return":"off",
         "no-param-reassign": ["error", { "props": false }],
-        "spaced-comment": ["error", "always", { "markers": ["/"] }]
+        "spaced-comment": ["error", "always", { "markers": ["/"] }],
+        "object-curly-spacing":"off",
+        "arrow-parens":"off"
         }
 }
