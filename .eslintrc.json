@@ -34,6 +34,8 @@
         "no-param-reassign": ["error", { "props": false }],
         "spaced-comment": ["error", "always", { "markers": ["/"] }],
         "object-curly-spacing":"off",
-        "arrow-parens":"off"
+        "arrow-parens":"off",
+        "guard-for-in":"off",
+        "no-prototype-builtins":"off"
         }
 }

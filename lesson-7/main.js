@@ -30,23 +30,26 @@ const obj3 = {
 };
 
 const deepEqual = (object1, object2) => {
-  const props1 = Object.getOwnPropertyNames(object1);
-  const props2 = Object.getOwnPropertyNames(object2);
+  const isAreObjects = typeof object1 === 'object' && typeof object2 === 'object';
+  const notNull = object1 !== null && object2 !== null;
 
-  if (props1.length !== props2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < props1.length; i++) {
-    const prop = props1[i];
-    const areObjects = typeof (object1[prop]) === 'object' && typeof (object2[prop]) === 'object';
-
-    if ((!areObjects && (object1[prop] !== object2[prop]))
-    || (areObjects && !deepEqual(object1[prop] && object2[prop]))) {
-      return false;
+  if (isAreObjects && notNull) {
+    for (let key in object1) {
+      if (!object2.hasOwnProperty(key)) {
+        return false;
+      }
+      if (typeof object1[key] === 'object' && typeof object2[key] === 'object') {
+        const result = deepEqual(object1[key], object2[key]);
+        if (!result) {
+          return false;
+        }
+      } else if (object1[key] !== object2[key]) {
+        return false;
+      }
     }
+    return true;
   }
-  return true;
 };
+
 console.log(deepEqual(obj1, obj2)); // true
 console.log(deepEqual(obj1, obj3)); // false
