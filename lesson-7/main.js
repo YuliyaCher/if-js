@@ -28,6 +28,7 @@ const obj3 = {
   },
   b: 'b',
 };
+
 const deepEqual = (object1, object2) => {
   const isAreObjects = typeof object1 === 'object' && typeof object2 === 'object';
   const notNull = object1 !== null && object2 !== null;
