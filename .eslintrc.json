@@ -15,7 +15,7 @@
         "no-console": 0,
         "no-use-before-define": 0,
         "func-names": "off",
-        "semi": 2,
+        "semi":["error", "always", { "omitLastInOneLineBlock": true}],
         "linebreak-style": ["error", "windows"],
         "no-plusplus": "off",
         "no-shadow": "off",
@@ -32,6 +32,12 @@
         "no-param-reassign": ["error", { "props": false }],
         "spaced-comment": ["error", "always", { "markers": ["/"] }],
         "object-curly-spacing":"off",
-        "arrow-parens":"off"
+        "arrow-parens":"off",
+        "no-extra-semi":"off",
+        "indent": "off",
+        "max-classes-per-file": ["error", 3],
+        "comma-dangle": "off",
+        "lines-between-class-members":"off",
+        "implicit-arrow-linebreak":"off"
         }
 }
