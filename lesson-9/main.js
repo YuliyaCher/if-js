@@ -1,26 +1,28 @@
 const colors = {
   data: ['magenta', 'cyan', 'firebrick', 'springgreen', 'skyblue'],
-  [Symbol.iterator]() {
-    return this;
-  },
+};
+  colors[Symbol.iterator] = function () {
+    let current = 0;
+    const { data } = this;
+    let last = this.data.length;
+    return {
       next() {
-        if (this.current === undefined) {
-          this.current = 0;
-        }
-        if (this.current < this.data.length) {
+        if (current < last) {
           return {
-            done: false,
-            value: this.data[this.current++],
-          };
-        }
-        if (this.current === this.data.length) {
-          this.current = 0;
-          return this.next();
+          done: false,
+          value: data[current++]
         };
       }
+      current = 0;
+          return {
+            done: false,
+            value: data[current++],
+          };
+        },
+      };
     };
 const changeColorP = (item) => (event) => {
-  event.target.style.color = (item).next().value;
+  event.target.style.color = item.next().value;
 };
 
 const p = document.querySelectorAll('p');
