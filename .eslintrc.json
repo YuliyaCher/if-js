@@ -15,7 +15,7 @@
         "no-console": 0,
         "no-use-before-define": 0,
         "func-names": "off",
-        "semi":["error", "always", { "omitLastInOneLineBlock": true}],
+        "semi": "error",
         "linebreak-style": ["error", "windows"],
         "no-plusplus": "off",
         "no-shadow": "off",
