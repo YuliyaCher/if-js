@@ -33,6 +33,7 @@
     justify-content: space-between;
     position: relative;
 }
+
 @media (max-width: 360px) {
     .homes__desktop .gallery {
     margin-top: 32px;
@@ -70,7 +71,7 @@
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 15px;
-    color: #a3a1a1;
+    color: #bfbfbf;
 }
 @media (max-width: 1200px) {
     .homes__desktop .gallery__item p {
